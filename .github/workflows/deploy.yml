@@ -18,19 +18,19 @@ jobs:
       - name: Checkout your repository
         uses: actions/checkout@v4
 
-      - name: Install Node.js
+      - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20' # Use a current LTS version
+          node-version: '20'
           cache: 'npm'
           
-      - name: Install dependencies
+      - name: Install dependencies cleanly
         run: npm ci
 
       - name: Build the project
         run: npm run build
 
-      - name: Upload build artifact
+      - name: Upload the build artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./dist
