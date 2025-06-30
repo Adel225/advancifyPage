@@ -1,0 +1,36 @@
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="utf-8">
+        <title>Advancify - Page Not Found</title>
+        <script type="text/javascript">
+        // Get the current path from the URL
+        var path = window.location.pathname;
+
+        // Check if the path is a file (contains a dot) or the root path
+        var isFile = path.indexOf('.') !== -1;
+        var isRoot = path === '/';
+
+        // Do not redirect for the root path or for files
+        if (!isRoot && !isFile) {
+            // Get the segment of the path after the repository name
+            // In your case, it will find the part after '/advancify'
+            var pathSegments = path.split('/');
+            var repoNameIndex = pathSegments.indexOf('advancify');
+            var redirectPath = (repoNameIndex !== -1 && repoNameIndex + 1 < pathSegments.length)
+            ? '/' + pathSegments.slice(repoNameIndex + 1).join('/')
+            : '/';
+            
+            // Reconstruct the URL with the base path and the query string/hash
+            var redirect = window.location.protocol + '//' + window.location.host + '/advancify/?p=' +
+            redirectPath + '&q=' + window.location.search.substring(1) +
+            window.location.hash;
+            
+            // Perform the redirect
+            window.location.replace(redirect);
+        }
+        </script>
+    </head>
+    <body>
+    </body>
+    </html>

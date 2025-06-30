@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://adel225.github.io/advancify/",
+  "homepage": "https://adel225.github.io/advancify",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
