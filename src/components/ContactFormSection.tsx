@@ -93,7 +93,7 @@ const ContactFormSection = () => {
 
     try {
       await Promise.all([
-        // emailjs.send(SERVICE_ID, TEMPLATE_ID, templateParams, PUBLIC_KEY),
+        emailjs.send(SERVICE_ID, TEMPLATE_ID, templateParams, PUBLIC_KEY),
 
         fetch(WEBHOOK_URL, {
           method: 'POST',
