@@ -8,7 +8,7 @@ const Header = () => {
             <div className="flex items-center space-x-3">
             <div className="w-14 h-14 rounded-lg backdrop-blur-sm flex items-center justify-center">
                 <img 
-                src="/image/logo_website.png" 
+                src="../../public/image/logo_website.png" 
                 alt="Advancify Logo"
                 // className="w-6 h-6"
                 />
