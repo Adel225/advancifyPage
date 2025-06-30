@@ -10,7 +10,7 @@ import PhoneInput from 'react-phone-number-input';
 import 'react-phone-number-input/style.css';
 import './PhoneNumberInput.css';
 
-const WEBHOOK_URL = 'https://a7anek.advancify.shop/webhook-test/83d92460-a7fb-4573-b2e1-1f8a32918a51';
+const WEBHOOK_URL = 'https://a7anek.advancify.shop/webhook-test/83d92460-a7fb-4573-b2e1-1f8a32918a51'; 
 
 // Access Vite environment variables
 const SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
@@ -49,6 +49,7 @@ const ContactFormSection = () => {
       });
       return; 
     }
+    
 
     if (!formData.PreferedContact) {
       toast({
