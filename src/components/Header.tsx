@@ -45,7 +45,7 @@
                 <a 
                     href="#contact-form" 
                     onClick={(e) => { e.preventDefault(); scrollToSection("#contact-form"); }}
-                    className="text-gray-300 hover:text-white transition-colors duration-300 cursor-pointer"
+                    className="text-gray-300 hover:text-white transition-colors duration-300 cursor-pointer" 
                 >
                     Contact
                 </a>
@@ -57,3 +57,4 @@
     };
     
     export default Header;
+    
