@@ -5,7 +5,6 @@ import path from "path"
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  // This tells Vite where your project will live on GitHub Pages
   base: '/advancifyPage/', 
   
   plugins: [react()],
