@@ -5,7 +5,7 @@ import path from "path"
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: '/advancifyPage/', 
+  // base: '/advancifyPage/', 
   
   plugins: [react()],
   resolve: {

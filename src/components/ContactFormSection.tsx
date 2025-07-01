@@ -13,9 +13,9 @@ import './PhoneNumberInput.css';
 const WEBHOOK_URL = 'https://a7anek.advancify.shop/webhook-test/83d92460-a7fb-4573-b2e1-1f8a32918a51'; 
 
 // Access Vite environment variables
-const SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
-const TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
-const PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
+// const SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+// const TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+// const PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
 
 const ContactFormSection = () => {
   const [formData, setFormData] = useState({
@@ -72,15 +72,15 @@ const ContactFormSection = () => {
 
     setIsSubmitting(true);
 
-    if (!SERVICE_ID || !TEMPLATE_ID || !PUBLIC_KEY) {
-      toast({
-        title: "Configuration Error",
-        description: "Email sending is not configured. Please ensure environment variables are set and the server was restarted.",
-        variant: "destructive",
-      });
-      setIsSubmitting(false);
-      return;
-    }
+    // if (!SERVICE_ID || !TEMPLATE_ID || !PUBLIC_KEY) {
+    //   toast({
+    //     title: "Configuration Error",
+    //     description: "Email sending is not configured. Please ensure environment variables are set and the server was restarted.",
+    //     variant: "destructive",
+    //   });
+    //   setIsSubmitting(false);
+    //   return;
+    // }
 
     const templateParams = {
       name: formData.name,
@@ -94,7 +94,7 @@ const ContactFormSection = () => {
 
     try {
       await Promise.all([
-        emailjs.send(SERVICE_ID, TEMPLATE_ID, templateParams, PUBLIC_KEY),
+        // emailjs.send(SERVICE_ID, TEMPLATE_ID, templateParams, PUBLIC_KEY),
 
         fetch(WEBHOOK_URL, {
           method: 'POST',
