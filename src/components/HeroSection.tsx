@@ -37,7 +37,7 @@ const HeroSection = () => {
           Automate Case {' '}
             <span className="gradient-text">Intake & Scheduling </span>
             {/* <br /> */}
-            — Free Up 10+ Hours Weekly.
+            <span className="sm:text-5xl">— Free Up 10+ Hours Weekly.</span>
           </h1>
         </div>
 
