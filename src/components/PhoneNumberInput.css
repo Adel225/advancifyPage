@@ -1,0 +1,59 @@
+/* Make the phone input match the shadcn/ui theme */
+.PhoneInput {
+    /* This styles the container div */
+    background-color: rgba(255, 255, 255, 0.05); /* bg-white/5 */
+    border: 1px solid rgba(255, 255, 255, 0.2);  /* border-white/20 */
+    border-radius: 0.375rem; /* rounded-md */
+    display: flex;
+    align-items: center;
+  }
+  
+  .PhoneInput:focus-within {
+    /* Mimic the focus ring from shadcn */
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+    box-shadow: 0 0 0 2px hsl(210 40% 98%), 0 0 0 4px hsl(210 40% 96.1%);
+  }
+  
+  .PhoneInputCountry {
+    /* Styles the country select part */
+    margin-left: 0.75rem; /* ml-3 */
+  }
+  
+  .PhoneInputInput {
+    /* This is the most important part: the actual text input */
+    background-color: transparent !important;
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+    color: white;
+    height: 2.5rem; /* h-10 */
+    padding-left: 0.75rem; /* px-3 */
+    width: 100%;
+  }
+  
+  .PhoneInputInput::placeholder {
+    color: #9ca3af; /* text-gray-400 */
+  }
+
+  .PhoneInputCountrySelect {
+    background: #18181b !important; /* dark background */
+    color: #fff !important;
+    border: 1px solid #27272a !important;
+  }
+  
+  .PhoneInputCountrySelect:focus {
+    outline: 2px solid #4D7DDA !important;
+  }
+  
+  .PhoneInputCountrySelect option {
+    background: #18181b !important;
+    color: #fff !important;
+  }
+  
+  /* Dropdown menu itself */
+  .PhoneInputCountrySelect:focus option,
+  .PhoneInputCountrySelect option {
+    background: #18181b !important;
+    color: #fff !important;
+  }
