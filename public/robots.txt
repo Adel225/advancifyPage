@@ -12,3 +12,6 @@ Allow: /
 
 User-agent: *
 Allow: /
+
+# Location of the sitemap
+Sitemap: https://advancify.dev/sitemap.xml
