@@ -198,7 +198,7 @@ const ContactFormSection = () => {
             </div>
 
             <div className="grid sm:grid-cols-2 gap-6">
-              <div className="space-y-2">
+              {/* <div className="space-y-2">
                 <Label htmlFor="businessType" className="text-white">Business Type</Label>
                 <Select value={formData.businessType} onValueChange={(value) => handleInputChange('businessType', value)}>
                   <SelectTrigger className="bg-white/5 border-white/20 text-white">
@@ -228,8 +228,8 @@ const ContactFormSection = () => {
                     <SelectItem value="both">Both</SelectItem>
                   </SelectContent>
                 </Select>
-              </div>
-            </div>
+              </div>*/}
+            </div> 
 
             <div className="space-y-2">
               <Label htmlFor="message" className="text-white">Tell Us more about your business</Label>

@@ -22,6 +22,7 @@ const ServicesSection = () => {
       features: ["Rapid Case File Summarization", "Key Information Extraction", "Secure & Confidential"]
     }
   ];
+  
 
   return (
     <section id="services" className="py-20 px-4 sm:px-6 lg:px-8">
