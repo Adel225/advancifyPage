@@ -18,7 +18,7 @@ const HeroSection = () => {
   };
 
   return (
-    <section className="min-h-screen flex flex-col justify-center items-center relative px-4 sm:px-6 lg:px-8">
+    <section className="min-h-screen flex flex-col justify-center items-center relative px-4 sm:px-6 lg:px-8" id="home">
       {/* Background gradient */}
       <div className="absolute inset-0 bg-gradient-to-br from-[#4D7DDA]/10 via-transparent to-[#8E1E5F2]/10"></div>
       

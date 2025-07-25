@@ -179,3 +179,19 @@ elevenlabs-convai {
   bottom: 20px;      /* 20 pixels from the bottom edge */
   z-index: 1000;     /* Ensures it appears on top of other content */
 }
+
+@layer components {
+  .prose-custom {
+    @apply prose prose-lg dark:prose-invert max-w-none 
+          prose-headings:font-bold prose-headings:text-white 
+          prose-h2:text-3xl prose-h2:mt-12 prose-h2:mb-4 prose-h2:border-b prose-h2:border-white/10 prose-h2:pb-2
+          prose-h3:text-2xl prose-h3:mt-8 prose-h3:mb-4
+          prose-p:text-gray-300 prose-p:leading-relaxed
+          prose-a:text-[#4D7DDA] prose-a:font-semibold prose-a:no-underline hover:prose-a:underline
+          prose-strong:text-white
+          prose-ul:list-disc prose-li:my-2
+          prose-li:marker:text-[#4D7DDA]
+          prose-blockquote:border-l-4 prose-blockquote:border-[#4D7DDA] 
+          prose-blockquote:pl-4 prose-blockquote:italic prose-blockquote:text-gray-400;
+  }
+}
